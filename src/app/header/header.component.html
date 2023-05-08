@@ -1,0 +1,27 @@
+<!--Tittle section-->
+<div class="container-fluid p-2 bg-option-2 text-center">
+    <div class="fade-in-title">
+        <h1>Hi! this is Diego's Portfolio 💼</h1>
+        <p *ngIf="isHome">This page summarize key points about me.</p>
+        <p *ngIf="isContact">This page contains a forms to contact me.</p>
+        <p>Today's Date and Time: {{ today | date: 'h:mm:ss a' }}</p>
+        <p class="custom-font-Quicksand" id="Date"></p>
+    </div>
+</div>
+<!--Tittle section end-->
+<!--Bar menu-->
+<nav class="navbar navbar-expand-sm bg-option-10 navbar-dark">
+    <div class="container-fluid">
+        <ul class="navbar-nav fade-in-title">
+            <li class="nav-item">
+                <a class="nav-link active" routerLink="/home">Introduction</a>
+            <li>
+                <a class="nav-link active" routerLink="/home">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/contact-me">Contact me</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--Bar menu end-->
