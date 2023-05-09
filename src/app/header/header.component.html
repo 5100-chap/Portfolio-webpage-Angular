@@ -14,12 +14,12 @@
     <div class="container-fluid">
         <ul class="navbar-nav fade-in-title">
             <li class="nav-item">
-                <a class="nav-link active" routerLink="/home">Introduction</a>
+                <a class="nav-link active"  [routerLink] = "['/home']"  fragment="intro">Introduction</a>
             <li>
-                <a class="nav-link active" routerLink="/home">Projects</a>
+                <a class="nav-link active"  [routerLink] = "['/home']"  fragment="projects">Projects</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLink="/contact-me">Contact me</a>
+                <a class="nav-link" [routerLink] = "['/home']"  fragment="contact-me">Contact me</a>
             </li>
         </ul>
     </div>
